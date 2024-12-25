@@ -2,7 +2,6 @@ import axios from 'axios';
 import mongoose from "mongoose";
 import DbCards from './dbCards.js';
 
-const connectionUrl = 'mongodb+srv://admin:E02DgS0j7BKLaxAT@cluster0.lo4ko.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const unsplashApiUrl = 'https://unsplash.com/napi/collections/2243806/photos?page=10&per_page=20&share_key=68fb07026758726e6b37256d299df571';
 let pg = 1;
 

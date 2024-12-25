@@ -2,6 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from 'cors';
 import DbCards from "./dbCards.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 
