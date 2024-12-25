@@ -12,7 +12,7 @@ const port = process.env.PORT || 8001;
 app.use(cors());
 app.use(express.json());
 
-const connectionUrl = `mongodb+srv://admin:E02DgS0j7BKLaxAT@cluster0.lo4ko.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const connectionUrl = process.env.MONGODB_URI
 mongoose.connect(connectionUrl, {
     useNewUrlParser : true,
     useUnifiedTopology : true
